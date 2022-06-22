@@ -7,15 +7,12 @@ export const useSubjectStore = defineStore('subject', {
         return { data: mockData }
     },
     actions: {
-        // addSubject(subject: { name: string; grades: number[]; }) {
-        //     this.data.push(subject);
-        // },
-        // updateSubject(subject: { name: string; grades: number[]; } | undefined) {
-        //     this.data[this.data.findIndex(element => element.name === subject?.name)] = subject;
-        // }
-
-        addSubject(subject: any) {
+        addSubject(subject: { id: string; name: string; grades: { id: string; number: number; }[]; }) {
             this.data.push(subject);
+        },
+
+        updateSubject(subject: any) {
+            this.data[this.data.findIndex(element => element.name === subject?.name)] = subject;
         }
     },
 

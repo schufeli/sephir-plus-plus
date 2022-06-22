@@ -1,24 +1,12 @@
 <script setup lang="ts">
 import { useSubjectStore } from '../stores/subject';
-
+import SubjectElement from './SubjectElement.vue';
     const store = useSubjectStore();
-
-    function addSubject(name: string) {
-        store.addSubject({ id: store.data.length + 1, name: name });
-    }
 </script>
 
 <template>
-    <div class="p-4 bg-white rounded-xl">
-        <div class="" v-for="subject of store.data">
-            <p>{{ subject.name }}</p>
-            <div>
-                <p v-for="grade of subject.grades">
-                    {{ grade.number }}
-                </p>
-            </div>
-        </div>
-
-        <button class="mt-10 bg-green-50" @click="addSubject('WUUUUUURRRR')">Update</button>
+    <div v-for="subject of store.data">
+        <SubjectElement :subject="subject" />
     </div>
+
 </template>
