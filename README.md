@@ -1,8 +1,8 @@
-# Vue template repository
+# Sephir plus plus
 
-Vue template for schufi.codes website projects
+Project for the M152 at the BBZW 
 
-## Installed and pre-configured packages
+## Installed packages
 
 - [vite](https://vitejs.dev/)
 - [vue 3](https://vuejs.org/)
