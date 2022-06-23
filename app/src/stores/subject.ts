@@ -18,5 +18,4 @@ export const useSubjectStore = defineStore('subject', {
     persist: {
         enabled: true
     }
-
 });
