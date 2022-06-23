@@ -15,5 +15,8 @@ export const useSubjectStore = defineStore('subject', {
             this.data[this.data.findIndex(element => element.name === subject?.name)] = subject;
         }
     },
+    persist: {
+        enabled: true
+    }
 
 });
