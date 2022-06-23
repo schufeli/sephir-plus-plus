@@ -32,7 +32,7 @@ import { useSubjectStore } from '../stores/subject';
 </script>
 
 <template>
-    <article class="bg-white rounded mt-5 p-4">
+    <article class="bg-white rounded my-5 p-4">
         <!-- subject name and avg -->
         <div class="flex justify-between items-center">
             <h2 class="font-medium">{{ subject.name }}</h2>
@@ -40,8 +40,8 @@ import { useSubjectStore } from '../stores/subject';
         </div>
         <!-- grade information -->
         <section class="my-4 flex flex-wrap">
-            <div class="p-2 mr-2 bg-gray-200 hover:bg-red-300 cursor-pointer" v-for="grade of subject.grades" @click="removeGrade(grade)">
-                <p>{{grade.number.toFixed(2)}}</p>
+            <div class="p-2 mr-2 mb-2 bg-gray-200 hover:bg-red-300 cursor-pointer" v-for="grade of subject.grades" @click="removeGrade(grade)">
+                <p>{{ grade.number.toFixed(2) }}</p>
             </div>
         </section>
         <!-- add new grade -->
