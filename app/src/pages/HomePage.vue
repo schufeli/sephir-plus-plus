@@ -5,7 +5,9 @@ import SubjectList from '../components/SubjectList.vue';
 
 <template>
     <section class="container mx-auto">
-        <TheHeader />
-        <SubjectList />
+        <div class="mx-2">
+            <TheHeader />
+            <SubjectList />
+        </div>
     </section>
 </template>

@@ -7,7 +7,7 @@ export const useSubjectStore = defineStore('subject', {
         return { data: mockData }
     },
     actions: {
-        addSubject(subject: { id: string; name: string; grades: { id: string; number: number; }[]; }) {
+        addSubject(subject: any) {
             this.data.push(subject);
         },
 
