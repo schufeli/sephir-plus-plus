@@ -8,5 +8,4 @@ import SubjectElement from './SubjectElement.vue';
     <div v-for="subject of store.data">
         <SubjectElement :subject="subject" />
     </div>
-
 </template>
