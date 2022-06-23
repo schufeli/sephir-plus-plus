@@ -2,6 +2,8 @@
 
 Project for the M152 at the BBZW 
 
+![Screenshot](./doc/img/sephirplusplus.png)
+
 ## Installed packages
 
 - [vite](https://vitejs.dev/)
