@@ -45,8 +45,9 @@ import { useSubjectStore } from '../stores/subject';
             </div>
         </section>
         <!-- add new grade -->
-        <div class="my-2 flex items-center">
-            <input v-model="input" type="number" placeholder="6.0" min="1.0" max="6.0" class="w-16 block input" :class="{ 'focus:border-red-500': formError }" />
+        <div class="my-2 flex items-center flex-wrap">
+            <input v-model="input" type="number" placeholder="6.0" min="1.0" max="6.0" class="w-16 block input" 
+                   :class="{ 'focus:border-red-500': formError }" @keyup.enter="newGrade(input)" />
             <button type="button" class="icon-btn mx-2" @click="newGrade(input)">+</button>
             <p class="text-red-500" v-show="formError">Grade must be between 1.0 and 6.0</p>
         </div>
